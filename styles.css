@@ -1,0 +1,26 @@
+
+
+.banner {
+	width: 100%;
+}
+
+img {
+	width: 100%;
+}
+
+.footer {
+	vertical-align: middle;
+	height: 3em;
+}
+
+header, footer {
+	background-color: fuchsia;
+}
+
+.main {
+	background: lightsalmon;
+}
+
+.title {
+	text-align: center;
+}

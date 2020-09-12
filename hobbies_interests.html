@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+        <link href="bootstrap-4.3.1-dist\css\bootstrap.css" rel="stylesheet">
+        <script src="components.js"></script>
+        <title>Home of the CK</title>
+    </head>
+    <body>
+        <script>document.body.appendChild(makeAnElement(header))</script>
+		<img src="images\homepage_banner.jpg" class="banner">
+        <div class="container-fluid main" id="overview">
+            <div class="row">
+                <div class="col-lg-2 lt-sidebar"></div>
+                <div class="col-lg-8 content">
+                    <div class="card-columns" id="hobbies">
+                        <script>
+                            document.getElementById("hobbies").appendChild(makeACard(new card(new image("hobbies.jpg", "Rock Climbing"), "Rock Climbing", "Rock climbing and bouldering are my favourite sports. They combine strength training and problem solving. They are also full body workouts.")))
+                        </script>
+                        <script>
+                            document.getElementById("hobbies").appendChild(makeACard(new card(new image("gaming.jpg", "Gaming"), "Gaming", "I've grown up with games and perhaps even got addicted to them. They provide intense stimulation quickly. I feel like I learn things and receive immediate feedback. I enjoy games on the PC and occasionally on the tabletop. Mobile games are too accessible to be healthy for me. My current obsessions are Hearthstone, Magic Arena and Diablo 3.")))
+                        </script>
+                        <script>
+                            document.getElementById("hobbies").appendChild(makeACard(new card(new image("Psychology.jpg", "Psychology"), "Psychology", "I started to studying how people think when I was doing derivative trading. I wanted to know how people tick and how we can circumvent the natural cognitive biases. I also wanted to know how people act in groups. Market trends could be approximated to be large quantities of people acting in groups. It has since become an interest that is still relevant today.")))
+                        </script>
+                    </div>
+                </div>
+                <div class="col-lg-2 rt-sidebar"></div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container-fluid">
+                &copy Neo Chee Kiong 2019
+            </div>
+        </footer>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.3.1-dist\js\bootstrap.bundle.js"></script>
+</html>
