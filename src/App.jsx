@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import './styles/App.css';
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBContainer, MDBMask, MDBView, MDBLink, MDBNav} from 'mdbreact';
+import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBContainer, MDBMask, MDBView, } from 'mdbreact';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Profile from './pages/Profile';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-import Projects from './pages/Projects';
+import { Link, Element, animateScroll as scroll } from 'react-scroll'
 
 
 function App() {
