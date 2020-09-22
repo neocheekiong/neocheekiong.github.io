@@ -8,9 +8,9 @@ const projects = [
   },
   {
     title:`Pinapps`,
-    description:'A place to collate your favourite apps and share them with others. A collaboration with <a href=\'https://github.com/siewla\'>Pang Siew La</a> ',
+    description:'A place to collate your favourite apps and share them with others. A collaboration with <a class=\'link\' href=\'https://github.com/siewla\'>Pang Siew La</a class=\'link\'>. ',
     technologies: ['express', 'ReactJS','MongoDB', 'cloudinary', 'capture-website', 'bcrypt', 'cors', 'express-jwt', 'google auth', 'Material Design Bootstrap for React', 'react-promise-tracker', 'mongoose', 'moment', 'react-loading'],
-    github:'https://github.com/neocheekiong/you-dont-know-singapore/',
+    github:'https://github.com/siewla/pinapps',
     deployment: 'https://pinapps.herokuapp.com/'
   },
   {

@@ -39,16 +39,21 @@ const Profile = () => {
                   <li>MongoDB</li>
                   <li>ExpressJS</li>
                 </ul>
-                <a href="https://www.linkedin.com/in/neo-chee-kiong" style={{
-                  padding: '3px'
-                }}>
-                  <MDBIcon size='3x' fab icon="linkedin" />
-                </a>
-                <a href="https://github.com/neocheekiong" style={{
-                  padding: '3px'
-                }}>
-                  <MDBIcon size='3x' fab icon="github" />
-                </a>
+                <MDBRow center>
+                  <MDBCol size='2'><a href="https://www.linkedin.com/in/neo-chee-kiong">
+                    <MDBIcon size='3x' fab icon="linkedin" />
+                  </a></MDBCol>
+                  <MDBCol size='2'>
+                    <a href="https://github.com/neocheekiong">
+                    <MDBIcon size='3x' fab icon="github" />
+                    </a>
+                  </MDBCol>
+                  <MDBCol size='2'>
+                    <a href="https://leetcode.com/neocheekiong/">
+                      <img src="img/LeetCode_logo_black.png" href="https://leetcode.com/neocheekiong/" alt="leet code" className='img-fluid'/>
+                    </a>
+                  </MDBCol>
+                </MDBRow>
               </MDBCardText>
             </MDBCardBody>
           </MDBCard>

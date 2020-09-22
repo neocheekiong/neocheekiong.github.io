@@ -8,8 +8,8 @@ function Projects(props) {
 
   return (
     <MDBJumbotron className='light-blue darken-3'>
-      <MDBCardHeader>
-        <MDBCardTitle className='text-center'>Projects</MDBCardTitle>
+      <MDBCardHeader color='white'>
+        <MDBCardTitle className='text-center black-text'>Projects</MDBCardTitle>
       </MDBCardHeader>
       <MDBRow>
         {projects.map(project => {
