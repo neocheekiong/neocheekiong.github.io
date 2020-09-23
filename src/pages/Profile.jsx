@@ -21,7 +21,7 @@ const Profile = () => {
         </MDBCol>
       </MDBRow>
       <MDBRow>
-        <MDBCol size='3'>
+        <MDBCol lg='3'>
           <MDBCard collection color='indigo darken-4'>
             <MDBCardBody>
               <MDBCardHeader>
@@ -58,7 +58,7 @@ const Profile = () => {
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
-        <MDBCol size='9'>
+        <MDBCol lg='9'>
           <Projects></Projects>        
         </MDBCol>
       </MDBRow>
