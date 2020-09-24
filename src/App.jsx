@@ -3,7 +3,8 @@ import './styles/App.css';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBContainer, MDBMask, MDBView, } from 'mdbreact';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Profile from './pages/Profile';
-import { Link, Element, animateScroll as scroll } from 'react-scroll'
+import { Link, Element, animateScroll as scroll } from 'react-scroll';
+import Projects from './pages/Projects';
 
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
                   <Link to='profile' duration='800' smooth={true} className='nav-link'>Profile</Link>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink to="#">Portfolio</MDBNavLink>
+                <Link to='projects' duration='800' smooth={true} className='nav-link'>Projects</Link>
                 </MDBNavItem>
                 <MDBNavItem>
                   <MDBNavLink to="#">Hobbies & Interests</MDBNavLink>
@@ -59,6 +60,11 @@ function App() {
       <section>
         <Element name='profile'>
           <Profile></Profile>
+        </Element>
+      </section>
+      <section>
+        <Element name='projects'>
+          <Projects></Projects>
         </Element>
       </section>
     </div>

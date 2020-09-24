@@ -1,6 +1,6 @@
 import React from "react";
 import { MDBJumbotron, MDBContainer, MDBRow, MDBCol, MDBCardTitle, MDBMask, MDBCard, MDBCardHeader, MDBCardImage, MDBCardBody, MDBCardText, MDBIcon } from "mdbreact";
-import Projects from "./Projects";
+import Timeline from "./Timeline";
 
 const Profile = () => {
   return (
@@ -59,7 +59,7 @@ const Profile = () => {
           </MDBCard>
         </MDBCol>
         <MDBCol lg='9'>
-          <Projects></Projects>        
+          <Timeline></Timeline>  
         </MDBCol>
       </MDBRow>
     </MDBContainer>

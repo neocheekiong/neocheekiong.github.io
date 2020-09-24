@@ -5,7 +5,7 @@ import { MDBBtn, MDBCard, MDBCardBody, MDBCardFooter, MDBCardHeader, MDBCardText
 
 function ProjectCard({description, title, github, deployment, technologies}) {
   return (
-    <MDBCol xl='4' md='6'>
+    <MDBCol xl='3' md='4'>
       <MDBCard color='indigo darken-4'>
         <MDBCardHeader>
           <MDBCardTitle className='white-text text-center'>{title}</MDBCardTitle>
