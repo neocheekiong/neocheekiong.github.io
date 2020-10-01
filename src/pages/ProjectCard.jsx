@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { MDBBtn, MDBCard, MDBCardBody, MDBCardFooter, MDBCardHeader, MDBCardText, MDBCardTitle, MDBCol, MDBIcon, MDBLink } from 'mdbreact'
+import { MDBBtn, MDBCard, MDBCardBody, MDBCardFooter, MDBCardHeader, MDBCardText, MDBCardTitle, MDBCol, MDBIcon } from 'mdbreact'
 
 
 function ProjectCard({description, title, github, deployment, technologies}) {
@@ -14,7 +14,7 @@ function ProjectCard({description, title, github, deployment, technologies}) {
           <MDBCardText className='white-text' dangerouslySetInnerHTML={{__html: description}}>
           </MDBCardText>
           <h5>Technologies Used</h5>
-          {technologies.map(tech => <li>{tech}</li>)}
+          {technologies.map((tech, index) => <li key={index}>{tech}</li>)}
         </MDBCardBody>
         <MDBCardFooter>
           <MDBBtn href={github} color='light-blue lighten-3'><MDBIcon fab icon="github" />  Repo</MDBBtn>

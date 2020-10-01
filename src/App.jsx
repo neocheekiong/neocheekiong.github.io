@@ -1,10 +1,26 @@
 import React, { useState } from 'react';
 import './styles/App.css';
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBContainer, MDBMask, MDBView, } from 'mdbreact';
+import { 
+  MDBNavbar,
+  MDBNavbarBrand, 
+  MDBNavbarNav, 
+  MDBNavbarToggler, 
+  MDBCollapse, 
+  MDBNavItem, 
+  MDBContainer, 
+  MDBMask, 
+  MDBView, 
+} from 'mdbreact';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Profile from './pages/Profile';
-import { Link, Element, animateScroll as scroll } from 'react-scroll';
+import { 
+  Link, 
+  Element, 
+  animateScroll as scroll 
+} from 'react-scroll';
 import Projects from './pages/Projects';
+import Footer from './components/Footer';
+import Hobbies from './pages/Hobbies'
 
 
 function App() {
@@ -27,16 +43,16 @@ function App() {
             <MDBCollapse isOpen={collapse} navbar>
               <MDBNavbarNav left>
                 <MDBNavItem active>
-                  <Link onClick={scroll.scrollToTop} className='nav-link'>Home</Link>
+                  <Link onClick={scroll.scrollToTop} className='nav-link' to='#'>Home</Link>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <Link to='profile' duration='800' smooth={true} className='nav-link'>Profile</Link>
+                  <Link to='projects' smooth={true} className='nav-link'>Projects</Link>
                 </MDBNavItem>
                 <MDBNavItem>
-                <Link to='projects' duration='800' smooth={true} className='nav-link'>Projects</Link>
+                  <Link to='profile' smooth={true} className='nav-link'>Profile</Link>
                 </MDBNavItem>
                 <MDBNavItem>
-                  <MDBNavLink to="#">Hobbies & Interests</MDBNavLink>
+                  <Link to="hobbies" smooth={true} className='nav-link'>Hobbies & Interests</Link>
                 </MDBNavItem>
               </MDBNavbarNav>
             </MDBCollapse>
@@ -58,15 +74,23 @@ function App() {
       </main>
 
       <section>
-        <Element name='profile'>
-          <Profile></Profile>
-        </Element>
-      </section>
-      <section>
         <Element name='projects'>
           <Projects></Projects>
         </Element>
       </section>
+
+      <section className='pb-4'>
+        <Element name='profile'>
+          <Profile></Profile>
+        </Element>
+      </section>
+      
+      <section>
+        <Element name='hobbies'>
+          <Hobbies></Hobbies>
+        </Element>
+      </section>
+      <Footer></Footer>
     </div>
         
   )
